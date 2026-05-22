@@ -6,10 +6,10 @@ class Antigravity < Formula
   license "MIT"
 
   def install
-    bin.install "antigravity.sh" => "antigravity"
+    bin.install "antigravity.sh" => "ag-cli"
   end
 
   test do
-    system "#{bin}/antigravity", "help"
+    system "#{bin}/ag-cli", "help"
   end
 end
